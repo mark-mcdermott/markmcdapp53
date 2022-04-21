@@ -1,0 +1,19 @@
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <%= link_to home_path, class: "d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" do %> 
+        <span class="fs-4">Test App</span>
+    <% end %>
+    <ul class="nav nav nav-pills">
+      <li class="nav-item">
+          <%= link_to "Home", home_path, class: active_class('/') %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", about_path, class: active_class('/about') %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Users", users_path, class: active_class('/users') %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", contact_path, class: active_class('/contact') %>
+      </li>
+    </ul>
+</header>
